@@ -15,6 +15,7 @@ Step 2: Script uploads csv file to AWS S3 bucket
 
 Step 3: Exploratory Analysis with Spark refrecencing table
 
+![image](https://user-images.githubusercontent.com/77939423/160414750-143e899d-f307-4a64-ae54-90b713e995be.png)
 
 STEP 1: HTML to obtain attributes and load to a csv file Allrecipes recipes are found in urls such as www.allrecipes.com/recipe/. By using a loop to iterate through a set range of recipe_ids, we were able to gather data and save it to a csv file. Recipes are parsed far and can vary in html depending on if it has certain attributes.For example, html for recipes with ratings is different those without ratings, and we had to keep those edge cases in mind for scrapping. Some standardization was done to time attributes by changing weeks/hours to minutes. We handled each attribute and throw an exception to skip if the recipe has invalid contents. For each recipe, we appended attribute data to their own lists to be fed to a dataframe that was able to upload a csv directly to AWS S3.
 
