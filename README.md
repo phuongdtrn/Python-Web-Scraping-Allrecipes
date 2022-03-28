@@ -1,4 +1,4 @@
-# Allrecipes Webscrapper Data Pipeline
+# Allrecipes Webscraper Data Pipeline
 
 # Overview
 This project details the steps for webscraping over 13,000+ recipes to analyze factors that could contribute to a higher star ratings from 1 to 5. Included in each recipe are 20 attributes such as star ratings, number of reviews, number of ratings number of photos, different types of cooking time, nutrition information, etc. After scraping data from allrecipes, we generated a csv file that is automatically uploaded to an AWS S3 bucket. We then generate a dataframe from the file using Spark and performed exploratory data analysis to understand distribution of different attributes.
